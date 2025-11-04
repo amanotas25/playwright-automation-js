@@ -1,0 +1,43 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "npx playwright codegen",
+    "playwright-report": "npx playwright show-report",
+    "test:all": "npx playwright test",
+    "test:api": "npx playwright test ./playwright-tests/API",
+    "test:ui": "npx playwright test ./playwright-tests/UI",
+    "test:visual": "npx playwright test ./playwright-tests/visualTesting",
+    "cucumber:all": "npx cucumber-js -p default --format pretty --backtrace",
+    "cucumber:api": "npx cucumber-js -p api --format pretty --backtrace",
+    "cucumber:ui": "npx cucumber-js -p ui --format pretty --backtrace",
+    "cucumber:visual": "npx cucumber-js -p visual --format pretty --backtrace",
+    "performance:k6": "k6 run ./performance-testing/perfTest-k6.js",
+    "performance:artillery": "dotenv -e .env -- npx artillery run ./performance-testing/perfTest-artillery.yml --name 'Testing-artillery' --record",
+    "performance:develop": "dotenv -e .env -- npx artillery run ./performance-testing/perfTest-artillery-develop.yml --name 'Testing-artillery-develop' --record",
+    "performance:report": "npx artillery run --output artillery-report.json ./performance-testing/perfTest-artillery-develop.yml && npx artillery report artillery-report.json",
+    "performance:playwright": "npx artillery run ./performance-testing/perfTest-artillery-playwright.yml"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@artilleryio/playwright-reporter": "^1.1.3",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "dotenv": "^17.2.3",
+    "dotenv-cli": "^11.0.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@sourcegraph/amp": "^0.0.1760013766-g2b1690",
+    "artillery": "^2.0.26",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0"
+  },
+  "imports": {
+    "#base/*": "./*.js",
+    "#pom/*": "./POM/*.js"
+  }
+}

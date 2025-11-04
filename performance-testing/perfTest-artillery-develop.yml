@@ -1,0 +1,22 @@
+config:
+  target: https://development-tms.elumadevqafeature.com
+  phases:
+    - duration: 10
+      arrivalRate: 5
+      rampTo: 15
+      name: Starting development with up to 15 virtual users
+    - duration: 15
+      arrivalRate: 15
+      name: Maintain those 15 virtual users for 10 seconds
+  plugins:
+    ensure:
+      thresholds:
+        - http.response_time.p99: 100
+        - http.response_time.p95: 75
+scenarios:
+  - flow:
+      - loop:
+          - get:
+              url: '/account/login'
+          - think: 4 #Waits 2 seconds between each request
+        count: 5

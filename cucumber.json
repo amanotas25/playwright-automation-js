@@ -1,0 +1,77 @@
+{
+  "default": {
+    "paths": [
+      "cucumber/features/"
+    ],
+    "require": [
+      "cucumber/steps/**/*.js"
+    ],
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "format": [
+      [
+        "html",
+        "cucumber-report.html"
+      ],
+      "summary",
+      "progress-bar",
+      "json:./cucumber-report.json"
+    ],
+    "timeout": 15000
+  },
+  "api": {
+    "paths": [
+      "cucumber/features/API"
+    ],
+    "require": [
+      "cucumber/steps/API/**/*.js"
+    ],
+    "format": [
+      [
+        "html",
+        "cucumber-report.html"
+      ],
+      "summary",
+      "progress-bar",
+      "json:./cucumber-report.json"
+    ],
+    "timeout": 15000
+  },
+  "ui": {
+    "paths": [
+      "cucumber/features/UI"
+    ],
+    "require": [
+      "cucumber/steps/UI/**/*.js"
+    ],
+    "format": [
+      [
+        "html",
+        "cucumber-report.html"
+      ],
+      "summary",
+      "progress-bar",
+      "json:./cucumber-report.json"
+    ],
+    "timeout": 15000
+  },
+  "visual": {
+    "paths": [
+      "cucumber/features/visualTesting"
+    ],
+    "require": [
+      "cucumber/steps/visualTesting/**/*.js"
+    ],
+    "format": [
+      [
+        "html",
+        "cucumber-report.html"
+      ],
+      "summary",
+      "progress-bar",
+      "json:./cucumber-report.json"
+    ],
+    "timeout": 15000
+  }
+}

@@ -1,0 +1,1307 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "looking-into-playwright-api-testing;verify-get-all-posts",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify GET all posts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8906899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 700196899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 917463900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I request all posts",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 264244499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1565299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the response should contain a list of posts",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2385499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 242780400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 275880700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2153999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-playwright-api-testing;verify-get-post-by-id",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify GET post by ID",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1190599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1152560299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1532252400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I request a post with ID 55",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224268900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 484000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should contain the post title \"sit vel voluptatem et non libero\"",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1358600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 520141799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 699058599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1844299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-playwright-api-testing;verify-post-create-new-post",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify POST create new post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1729800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1258964300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1263817900
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"title\": \"This is cucumber test with playwright and API\",\n  \"body\": \"I guess i'm just here, bro\",\n  \"userId\": 45\n}",
+                "line": 15
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I create a new post with body:",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319904200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1878800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the response should contain the post title \"This is cucumber test with playwright and API\"",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1284500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 532311499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 612596799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2257200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-playwright-api-testing;verify-put-update-post",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify PUT update post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1843300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1729949100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2450353900
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"title\": \"I just updated this with cucumber, playwright and API\",\n  \"body\": \"Almost there, buddie\",\n  \"userId\": 42\n}",
+                "line": 27
+              }
+            ],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I update a post with id 5 and body:",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162634699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2630999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the response should contain the post title \"I just updated this with cucumber, playwright and API\"",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2775200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1008047800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 943795799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2371500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-playwright-api-testing;verify-delete-post",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Verify DELETE post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1558600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1288728399
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1361505499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I delete a post with id 64",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 360772399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "cucumber\\steps\\API\\jsonPlaceHolder.step.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 758599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 610389899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 550663599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1090299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "looking-into-playwright-api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Looking into playwright API testing",
+    "tags": [],
+    "uri": "cucumber\\features\\API\\JsonPlaceHolder.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "looking-into-rahulshatty-academy-with-playwright;verify-basic-functionalities",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "Verify basic functionalities",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1356799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1092081600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1020075500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to RahulShatty Academy",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6401022499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I perform actions in the header with the following values: \"2\", \"Colombia\", \"option3\", \"1\"",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244288000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I expect the values \"2\", \"Colombia\", \"option3\", \"1\" to be reflected on the page",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98951200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 329221900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 465002700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1184400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-rahulshatty-academy-with-playwright;verify-basic-functionalities",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Verify basic functionalities",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 451199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 694663700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1062779600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to RahulShatty Academy",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5345642200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I perform actions in the header with the following values: \"1\", \"Argentina\", \"option2\", \"2\"",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194924800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I expect the values \"1\", \"Argentina\", \"option2\", \"2\" to be reflected on the page",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60728199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 524939899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 553554100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 929899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-rahulshatty-academy-with-playwright;verify-basic-functionalities",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Verify basic functionalities",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 383900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 550970900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 696873599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to RahulShatty Academy",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5389561600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I perform actions in the header with the following values: \"3\", \"Mexico\", \"option1\", \"3\"",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 250901700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I expect the values \"3\", \"Mexico\", \"option1\", \"3\" to be reflected on the page",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37836499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 453794500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 524971699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1578200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "looking-into-rahulshatty-academy-with-playwright;verify-basic-functionalities",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Verify basic functionalities",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2359600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1162605999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1380472399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to RahulShatty Academy",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5825498199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I perform actions in the header with the following values: \"2\", \"Brazil\", \"option1\", \"1\"",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237692899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I expect the values \"2\", \"Brazil\", \"option1\", \"1\" to be reflected on the page",
+            "match": {
+              "location": "cucumber\\steps\\UI\\rahulShatty.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127537900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 303098500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 406371600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1353100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "looking-into-rahulshatty-academy-with-playwright",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Looking into RahulShatty Academy with Playwright",
+    "tags": [],
+    "uri": "cucumber\\features\\UI\\RahulShatty.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "visual-testing-in-sauce-demo-/-swag-labs;visual-testing-with-error-users",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Visual testing with error users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 594100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 820257899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1256261399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit sauce demo",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 671425400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I use credentials: \"wrong_user\", \"wrong_pass\"",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1161709799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I use image \"cucumber-error-login.png\" expecting a visual difference with max tolerance of 0.04",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210408400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 374985899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 398573399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2347699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "visual-testing-in-sauce-demo-/-swag-labs;visual-testing-with-error-users",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Visual testing with error users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1744999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 974366900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1323458100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit sauce demo",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 622532100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I use credentials: \"\", \"\"",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1120216199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I use image \"cucumber-clean-login.png\" expecting a visual difference with max tolerance of 0.04",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153879899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 353675900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 352113600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1522899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "visual-testing-in-sauce-demo-/-swag-labs;visual-testing-with-error-users",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Visual testing with error users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1019299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 961697500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1232949800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit sauce demo",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1996606599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I use credentials: \"locked_out_user\", \"secret_sauce\"",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1134835399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I use image \"cucumber-error-login.png\" expecting a visual difference with max tolerance of 0.04",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293226000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 243600300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 398641399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2067399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "visual-testing-in-sauce-demo-/-swag-labs;visual-testing-with-error-users",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Visual testing with error users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1579700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1058095300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1126926999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit sauce demo",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 903254100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I use credentials: \"standard_user\", \"secret_sauce\"",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1197540699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I use image \"clean-login.png\" expecting a visual difference with max tolerance of 0.04",
+            "match": {
+              "location": "cucumber\\steps\\visualTesting\\SwagLabs.step.js:33"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 445660300,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.04\u001b[39m\nReceived:   \u001b[31m0.28055555555555556\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\playwright\\lib\\matchers\\expect.js:221:24)\n    at World.<anonymous> (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\cucumber\\steps\\visualTesting\\SwagLabs.step.js:57:33)\n    at async wrapPromiseWithTimeout (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\time.js:67:12)\n    at async Object.run (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:64:22)\n    at async Object.run (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:64:26)\n    at async TestCaseRunner.invokeStep (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:123:16)\n    at async TestCaseRunner.runStep (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:288:26)\n    at async C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:208:44\n    at async TestCaseRunner.aroundTestStep (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:148:32)\n    at async TestCaseRunner.runAttempt (C:\\Users\\alejandro.manotas.SOMBRA-L625\\Documents\\repos\\playwright-test\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:190:13)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 459348699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 464983800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1934500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "visual-testing-in-sauce-demo-/-swag-labs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Visual testing in Sauce Demo / Swag Labs",
+    "tags": [],
+    "uri": "cucumber\\features\\visualTesting\\SwagLabs.feature"
+  }
+]
